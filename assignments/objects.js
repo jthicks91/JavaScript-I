@@ -32,7 +32,7 @@ const Kennan = {
   name: "Kennan",
   gender: "M",
   speak() {
-    console.log("Hello, my name is Kennan!");
+    return "Hello, my name is Kennan!";
   }
 };
 
@@ -118,13 +118,11 @@ const parent = {
 
 // Log the parent object's name
 console.log(parent.speak());
-// Log the child's age
+// Log the child's ages
 console.log(parent.child.age);
 
 // Log the name and age of the grandchild
-console.log(parent.child.grandchild.name);
-console.log(parent.child.grandchild.age);
-
+console.log(parent.child.grandchild.age, parent.child.grandchild.name);
 // Have the parent speak
 parent.speak();
 // Have the child speak
